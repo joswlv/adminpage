@@ -568,12 +568,11 @@ body {
 }
 
 .panel-heading>.panel-options, .content-box-header .panel-options {
-    float: right;
     padding-right: 15px;
 }
 
 .panel-heading>.panel-options>a, .content-box-header .panel-options>a {
-    margin-top: 10px;
+    margin-top: 34px;
 }
 
 .panel-body {

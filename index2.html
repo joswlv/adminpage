@@ -9,13 +9,18 @@
     <link href="bootstrap/v3.0.3/css/bootstrap.min.css" rel="stylesheet">
     <!-- styles -->
     <link href="admin/css/styles.css" rel="stylesheet">
-
+    <link href="admin/css/chart.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+    <!--DatePicker-->
+    <!-- jQuery UI -->
+    <link href="admin/vendor/jquery/jquery-ui.min.js" rel="stylesheet" media="screen">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="admin/vendor/form-helpers/css/bootstrap-formhelpers.min.css" rel="stylesheet">
+    <link href="admin/vendor/select/bootstrap-select.min.css" rel="stylesheet">
+
 </head>
 <body>
 <div class="header">
@@ -52,10 +57,11 @@
             <div class="content-box-large">
                 <div class="panel-heading">
                     <div class="panel-title">구매 횟수</div>
-
-                    <div class="panel-options">
-                        <a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
-                        <a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
+                    <div class="row">
+                        <div class="daytext col-md-1"><h5>시작 :</h5></div>
+                        <div class="day col-md-2 bfh-datepicker" data-format="y-m-d" data-date="today"></div>
+                        <div class="daytext col-md-1"><h5>끝 :</h5></div>
+                        <div class="day col-md-2 bfh-datepicker" data-format="y-m-d" data-date="today"></div>
                     </div>
                 </div>
                 <div class="panel-body">
@@ -66,10 +72,11 @@
             <div class="content-box-large">
                 <div class="panel-heading">
                     <div class="panel-title">장바구니 담기 횟수</div>
-
-                    <div class="panel-options">
-                        <a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
-                        <a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
+                    <div class="row">
+                        <div class="daytext col-md-1"><h5>시작 :</h5></div>
+                        <div class="day col-md-2 bfh-datepicker" data-format="y-m-d" data-date="today"></div>
+                        <div class="daytext col-md-1"><h5>끝 :</h5></div>
+                        <div class="day col-md-2 bfh-datepicker" data-format="y-m-d" data-date="today"></div>
                     </div>
                 </div>
                 <div class="panel-body">
@@ -80,10 +87,11 @@
             <div class="content-box-large">
                 <div class="panel-heading">
                     <div class="panel-title">상세보기 횟수</div>
-
-                    <div class="panel-options">
-                        <a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
-                        <a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
+                    <div class="row">
+                        <div class="daytext col-md-1"><h5>시작 :</h5></div>
+                        <div class="day col-md-2 bfh-datepicker" data-format="y-m-d" data-date="today"></div>
+                        <div class="daytext col-md-1"><h5>끝 :</h5></div>
+                        <div class="day col-md-2 bfh-datepicker" data-format="y-m-d" data-date="today"></div>
                     </div>
                 </div>
                 <div class="panel-body">
@@ -97,10 +105,8 @@
                     <div class="content-box-large">
                         <div class="panel-heading">
                             <div class="panel-title">카테고리별 구매 횟수</div>
-
-                            <div class="panel-options">
-                                <a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
-                                <a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
+                            <div class="pieday">
+                                <div class="day bfh-datepicker" data-format="y-m-d" data-date="today"></div>
                             </div>
                         </div>
                         <div class="panel-body">
@@ -113,10 +119,8 @@
                     <div class="content-box-large">
                         <div class="panel-heading">
                             <div class="panel-title">카테고리별 장바구니 횟수</div>
-
-                            <div class="panel-options">
-                                <a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
-                                <a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
+                            <div class="pieday">
+                                <div class="day bfh-datepicker" data-format="y-m-d" data-date="today"></div>
                             </div>
                         </div>
                         <div class="panel-body">
@@ -129,10 +133,8 @@
                     <div class="content-box-large">
                         <div class="panel-heading">
                             <div class="panel-title">카테고리별 상세보기 횟수</div>
-
-                            <div class="panel-options">
-                                <a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
-                                <a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
+                            <div class="pieday">
+                                <div class="day bfh-datepicker" data-format="y-m-d" data-date="today"></div>
                             </div>
                         </div>
                         <div class="panel-body">
@@ -181,5 +183,8 @@
 
 <script src="admin/js/custom.js"></script>
 <script src="admin/js/stats_product.js"></script>
+<!--DatePicker-->
+<script src="admin/vendor/form-helpers/js/bootstrap-formhelpers.min.js"></script>
+<script src="admin/vendor/select/bootstrap-select.min.js"></script>
 </body>
 </html>

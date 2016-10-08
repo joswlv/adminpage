@@ -110,3 +110,24 @@ Morris.Bar({
     hideHover: 'auto',
     barColors: ["#3d88ba"]
 });
+
+$(document).ready(function(){
+    // Select
+    $('.selectpicker').selectpicker();
+
+    // Mask
+    if ($('[data-mask]')
+            .length) {
+        $('[data-mask]')
+            .each(function () {
+
+                $this = $(this);
+                var mask = $this.attr('data-mask') || 'error...',
+                    mask_placeholder = $this.attr('data-mask-placeholder') || 'X';
+
+                $this.mask(mask, {
+                    placeholder: mask_placeholder
+                });
+            })
+    }
+});
