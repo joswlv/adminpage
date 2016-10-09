@@ -1,12 +1,3 @@
-.daytext {
-    text-align: right;
-    padding-right:5px;
-    padding-left: 5px;
-
-}
-.day {
-    padding-left: 5px;
-}
-.pieday{
-    float: right;
+.daterange{
+    width: 166px;
 }
