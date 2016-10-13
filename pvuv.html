@@ -16,9 +16,9 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <link rel="stylesheet" type="text/css" href="admin/css/AdminLTE.min.css">
     <!-- Include Required Prerequisites -->
-    <link rel="stylesheet" type="text/css" href="admin/vendor/bootstrap-datetimepicker/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="admin/vendor/bootstrap-datetimepicker/bootstrap.css"/>
     <!-- Include Date Range Picker -->
-    <link rel="stylesheet" type="text/css" href="admin/vendor/bootstrap-datetimepicker/daterangepicker.css" />
+    <link rel="stylesheet" type="text/css" href="admin/vendor/bootstrap-datetimepicker/daterangepicker.css"/>
 
 
 </head>
@@ -52,50 +52,65 @@
                 </ul>
             </div>
         </div>
-        <div class="col-md-2"></div>
-        <div class="col-md-6">
+        <!--<div class="col-md-2"></div>-->
+        <div class="col-md-10">
             <div class="content-box-large">
                 <div class="panel-heading">
                     <div class="panel-title">구매 횟수</div>
                     <div>
-                        <input type="text" class="daterange" name="daterange" value="" />
+                        <input type="text" class="daterange" name="daterange" value=""/>
                     </div>
                 </div>
                 <div class="panel-body">
                     <div class="row">
-                        <div class=" col-xs-6">
+                        <div class=" col-xs-3">
                             <!-- small box -->
                             <div class="small-box bg-red">
                                 <div class="inner">
                                     <h3>65</h3>
                                     <p>Unique Visitors</p>
                                 </div>
-                                <div class="icon">
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-6">
-                            <!-- small box -->
-                            <div class="small-box bg-yellow">
-                                <div class="inner">
-                                    <h3>44</h3>
-
-                                    <p>Page View</p>
-                                </div>
-                                <div class="icon">
-
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <div class="content-box-large">
+                <div class="panel-heading">
+                    <div class="panel-title">PageView</div>
+                    <div>
+                        <input type="text" class="daterange" name="daterange" value=""/>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>페이지</th>
+                            <th>페이지뷰</th>
+                            <th>비율</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>index.html</td>
+                            <td>100</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>/product-detail.html</td>
+                            <td>30</td>
+                            <td>20%</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
         </div>
+
     </div>
+</div>
 </div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
